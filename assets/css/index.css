@@ -23,4 +23,116 @@ body {
   font-family: handjet_regular;
 }
 
+nav {
+  left: 0;
+  right: 0;
+  height: 4rem;
+  display: flex;
+  position: fixed;
+  background: #123;
+  align-items: center;
+  box-shadow: 0 0 0.5rem;
+  border-radius: 0 0 1rem 1rem;
+  justify-content: space-between;
+}
+
+i {
+  width: 2.5rem;
+  height: 0.3rem;
+  display: block;
+  margin: 0.8rem 0;
+  background: #fff;
+  border-radius: 0.3rem;
+}
+
+li {
+  display: flex;
+  list-style: none;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+a {
+  color: #999;
+  font-size: 1.5rem;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.25rem;
+}
+
+.logo_img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.logo_txt {
+  color: #fff;
+  font: 4rem handjet_bold;
+}
+
+.toggle {
+  opacity: 0;
+  width: 4rem;
+  height: 4rem;
+  right: 0.25rem;
+  position: fixed;
+}
+
+.burger {
+  border: none;
+  background: none;
+  margin-right: 1.25rem;
+}
+
+.main_menu {
+  top: 4rem;
+  left: 1rem;
+  right: 1rem;
+  max-height: 0;
+  position: fixed;
+  overflow: hidden;
+  background: #123;
+  box-shadow: 0 0 0.5rem;
+  transition: max-height 0.5s;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.toggle:checked ~ .main_menu {
+  max-height: 100vh;
+}
+
+li:nth-child(1) {
+  margin-top: 1rem;
+}
+
+li > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+a:after {
+  width: 0;
+  content: "";
+  height: 0.3rem;
+  display: block;
+  background: #f9b;
+  border-radius: 0.3rem;
+  transition: width 0.5s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */
