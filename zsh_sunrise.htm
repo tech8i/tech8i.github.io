@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+  <title>tech8i - zsh_sunrise</title>
+
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#fdf5e2"/>
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+
+<body>
+
+
+  <!-- alert & overlay -->
+
+  <div class="alert">
+
+    <button class="cross">
+      <span class="line__1"></i>
+      <span class="line__2"></i>
+    </button>
+
+    <p>Any theme you set will be saved!</p>
+
+  </div>
+
+  <!-- alert overlay -->
+
+  <div class="overlay_1"></div>
+
+  <!-- nav bar menu overlay -->
+
+  <div class="overlay_2"></div>
+
+  <!-- nav bar overlay -->
+
+  <div class="overlay_3"></div>
+
+  <!-- nav bar -->
+
+  <div class="fix"></div>
+
+  <nav>
+
+    <header class="logo">
+
+      <img class="logo_img" src="assets/png/logo_lit.png" alt="Logo image">
+
+      <h1 class="logo_txt">TECH8I</h1>
+
+    </header>
+
+    <input class="toggle" type="checkbox">
+
+    <button class="switch">
+      <p class="icon" style="font-size : 3rem">%</p>
+    </button>
+
+    <button class="burger">
+      <i class="line_1"></i>
+      <i class="line_2"></i>
+      <i class="line_3"></i>
+    </button>
+
+    <ul class="main_menu">
+
+      <li>
+        <p class="nav_icon">x</p>
+        <a class="home" href="index.html">Home</a>
+      </li>
+      <li>
+        <p class="nav_icon">?</p>
+        <a class="about" href="about.htm">About</a>
+      </li>
+      <li style="
+        margin : 0;
+        margin-left : 1.25rem;
+        padding-bottom : .5rem;">
+        <p class="nav_icon">;</p>
+        <a class="contact" href="contact.htm">Contact</a>
+      </li>
+      <li style="
+        margin : 0;
+        display : block;
+        padding-top : .5rem;
+        margin-bottom : 1rem;
+        padding-left : 1.25rem;">
+        <div class="flex" style="margin : 0">
+          <p class="nav_icon">@</p>
+          <a class="settings">Settings</a>
+        </div>
+        <div class="flex" style="margin : 0">
+          <input class="set_check" type="checkbox">
+          <p class="set" style="margin : 0">enable/disable blur</p>
+        </div>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <!-- ad -->
+
+  <div class="ad_flex">
+
+    <h2>Ad</h2>
+
+    <button class="cross">
+      <span class="line__1"></i>
+      <span class="line__2"></i>
+    </button>
+
+  </div>
+
+  <div class="ad">
+
+    <p>
+      Are you tired of the constant spam and advertisements your email
+      provider throw at you? Do you ever feel like you're watched
+      for every email you send and receive? well I have a
+      solution for you, welcome to the best email
+      provider in the world: tuta, tuta
+      (formerly tutanota) key selling
+      point is privacy, wether you
+      send emails that you don't
+      want anyone to see or you
+      just want peace of mind
+      from the constant ads
+      that other email
+      providers show,
+      tuta got you
+      covered.
+      So what
+      are you
+      waiting
+      for?
+      sign
+      up
+      for
+      a yearly
+      membership
+      with this <a href="https://app.tuta.com/signup?ref=MXRnS1VIYjM">link</a> and you'll receive a free month!
+    </p>
+
+  </div>
+
+  <!-- content -->
+
+  <h2>An Aesthetic zsh theme</h2>
+
+  <div class="content">
+
+    <p>
+      This theme was inspired by solarized light theme
+      and sun-day theme for micro editor,
+      as you can see in this screenshot:
+    </p>
+
+    <img class="scrnshot" src="assets/png/screenshot.jpg" alt="a screenshot for zsh_sunrise theme">
+
+  </div>
+
+  <h2>Features</h2>
+
+  <div class="content">
+
+    <p>This theme has the following features:</p>
+
+    <ul>
+      <li><p style="margin-top : 1rem">Aesthetic look</p></li>
+      <li><p>functional date/time</p></li>
+      <li><p>styled current directory</p></li>
+      <li><p>exit code showing as "--" or "^^"</p></li>
+      <li><p>beautiful looking icons (see note below)</p></li>
+      <li><p>ascii art featuring a skull (see note below)</p></li>
+      <li><p>the time it took a command to be executed</p></li>
+      <li><p>functional battery percentage (see note below)</p></li>
+    </ul>
+
+  </div>
+
+  <h2>Installation</h2>
+
+  <div class="content">
+
+    <p>For termux users:</p>
+
+    <p>
+      Grab
+      <a href="https://github.com/tech8i/zsh_sunrise/releases/tag/8i8">this</a>
+      and extract it with:
+      <code>unzip x zsh_sunrise-8i8.zip</code>
+      or
+      <code>tar xzvf zsh_sunrise-8i8.tar.gz</code>
+      and then move
+      <code>icon</code>
+      and
+      <code>precmd</code>
+      somewhere like
+      <code>~/zsh/</code>
+      and start sourcing them in your .zshrc profile located in
+      <code>$PREFIX/etc</code>
+      like this:
+    </p>
+
+    <button class="copy">
+      <img class="copy_img" src="assets/svg/copy.svg">
+    </button>
+
+    <br>
+
+    <textarea class="code_cont" readonly="readonly">
+. ~/zsh/icon
+. ~/zsh/precmd
+    </textarea>
+
+    <p>
+      and then create a file called
+      <code>colors.properties</code>
+      in
+      <code>~/.termux</code>
+      and copy/paste the following in your editor:
+    </p>
+
+    <button class="copy">
+      <img class="copy_img" src="assets/svg/copy.svg">
+    </button>
+
+    <br>
+
+    <textarea class="code_cont" readonly="readonly">
+background : #fffccc
+foreground : #000000
+color6 : #fffaaa
+cursor : #ff9900
+color5 : #ff99bb
+    </textarea>
+
+    <p>and you're good to go</p>
+
+    <p>
+      for other poeple who want to use this theme in other distrobutions
+      just do everything I mentioned above except that
+      you'll need to look for
+      <code>/usr/etc</code>
+      instead of
+      <code>$PREFIX/etc</code>
+      and then you'll need to troubleshot a few things (see below)
+    </p>
+
+  </div>
+
+  <h2>Notes</h2>
+
+  <div class="content">
+
+    <p>
+      Note that this theme require
+      <a target="_bla" href="https://github.com/ryanoasis/nerd-fonts">nerd fonts</a>
+      set preferably
+      <a href="https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFontMono-Regular.ttf">jetbrainsmono</a>,
+      another thing is that this theme will work pretty good
+      if you have termux, if not then do those things
+      to troubleshot anything you may encounter:
+    </p>
+
+    <p>
+      Open up the file named
+      <code>precmd</code>
+      and then look for
+      <code>BAT=$(content)</code>,
+      change the content to
+      <code>"cat /sys/class/power_supply/battery/capacity | sed s/$/%/"</code>,
+      and now the battery percentage should work flawlessly, also
+      you'll need to set the colors so that it match what you
+      saw on the screenshot, so first look in the settings in
+      your terminal emulator for something called color
+      editor or something like that and then
+      change the colors to this:
+    </p>
+
+    <ul>
+      <li><p style="margin-top : 1rem">background to #fffccc</p></li>
+      <li><p>foreground to #0000000</p></li>
+      <li><p>color6 to #fffaaa (cyan color)</p></li>
+      <li><p>cursor to #ff9900 (cursor color)</p></li>
+      <li><p>color5 to #ff99bb (magenta color)</p></li>
+    </ul>
+
+    <p>And you should be good to go!</p>
+
+    <p>
+      And one more thing, if you want to use the ascii art
+      I created for this theme on other projects,
+      you'll need to mention "tech8i"
+      in your future creation
+    </p>
+
+    <p>
+      see you in the next post and be sure to bookmark
+      this site for future content!
+    </p>
+
+  </div>
+
+  <h2>Comments</h2>
+
+  <!-- cusdis -->
+
+  <div id="cusdis_thread"
+    data-page-id="{{ PAGE_ID }}"
+    data-host="https://cusdis.com"
+    data-page-url="{{ PAGE_URL }}"
+    data-page-title="{{ PAGE_TITLE }}"
+    data-app-id="fe528014-3371-4229-9cd0-55bdf8567b64"></div>
+
+
+  <!-- footer -->
+
+  <footer>Made with<p class="icon">&</p>By tech8i</footer>
+
+  <!-- js scripts -->
+
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/cusdis.js"></script>
+
+
+</body>
+
+</html>

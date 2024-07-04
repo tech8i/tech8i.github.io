@@ -1,0 +1,60 @@
+/* font */
+
+@font-face {
+  font-family : handjet_regular;
+  src : url("/assets/ttf/handjet_regular.ttf");
+}
+
+@font-face {
+  font-family : handjet_bold;
+  src : url("/assets/ttf/handjet_bold.ttf");
+}
+
+/* class */
+
+.px-1 {
+  color : #765;
+  display : flex;
+  font-size : 1.3rem;
+  margin : 1rem .5rem;
+  align-items : center;
+  font-family : handjet_regular;
+  justify-content : space-between;
+}
+
+.border {
+  width : 50%;
+  height : 1rem;
+  background : #fb9;
+  margin-bottom : 1rem;
+  box-shadow : .5rem 0 0 #543 , -.5rem 0 0 #543 , 0 .5rem 0 #543 , 0 -.5rem 0 #543;
+}
+
+.mt-4 {
+  margin-top : 2rem;
+  display : block;
+}
+
+.text-gray-500 {
+  margin-bottom : 0;
+  margin-top : .5rem;
+  margin-left : 2rem;
+}
+
+.my-4{
+  margin-bottom : 2rem;
+  box-shadow : .5rem 0 0 #543 , -.5rem 0 0 #543 , 0 .5rem 0 #543 , 0 -.5rem 0 #543;
+}
+
+/* select */
+
+#root button {
+  color : #765;
+  background : #fb9;
+  font-family : handjet_regular;
+  box-shadow : .3rem 0 0 #543 , -.3rem 0 0 #543 , 0 .3rem 0 #543 , 0 -.3rem 0 #543;
+}
+
+#root a {
+  display : none;
+}

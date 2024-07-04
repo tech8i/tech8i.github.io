@@ -4,12 +4,15 @@
 
 <head>
 
-  <title>tech8i - Home</title>
+  <title>tech8i - About</title>
 
   <meta charset="utf-8">
   <meta name="theme-color" content="#fdf5e2"/>
   <meta name="viewport" content="initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/ad.css">
   <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/nav_bar.css">
 
 </head>
 
@@ -28,17 +31,7 @@
 
   </div>
 
-  <!-- alert overlay -->
-
-  <div class="overlay_1"></div>
-
-  <!-- nav bar menu overlay -->
-
-  <div class="overlay_2"></div>
-
-  <!-- nav bar overlay -->
-
-  <div class="overlay_3"></div>
+  <div class="overlay"></div>
 
   <!-- nav bar -->
 
@@ -46,18 +39,15 @@
 
   <nav>
 
-    <header class="logo">
-
+    <div class="logo">
       <img class="logo_img" src="assets/png/logo_lit.png" alt="Logo image">
-
       <h1 class="logo_txt">TECH8I</h1>
-
-    </header>
+    </div>
 
     <input class="toggle" type="checkbox">
 
     <button class="switch">
-      <p class="icon" style="font-size : 3rem">%</p>
+      <img class="drk_lit" src="assets/svg/dark.svg" alt="Dark/Light switch">
     </button>
 
     <button class="burger">
@@ -69,41 +59,23 @@
     <ul class="main_menu">
 
       <li>
-        <p class="nav_icon">x</p>
+        <img src="assets/svg/home.svg" alt="Home link">
         <a class="home" href="index.html">Home</a>
       </li>
       <li>
-        <p class="nav_icon">?</p>
+        <img src="assets/svg/about.svg" alt="About link">
         <a class="about" href="about.htm">About</a>
       </li>
-      <li style="
-        margin : 0;
-        margin-left : 1.25rem;
-        padding-bottom : .5rem;">
-        <p class="nav_icon">;</p>
+      <li>
+        <img src="assets/svg/contact.svg" alt="Contact link">
         <a class="contact" href="contact.htm">Contact</a>
-      </li>
-      <li style="
-        margin : 0;
-        display : block;
-        padding-top : .5rem;
-        margin-bottom : 1rem;
-        padding-left : 1.25rem;">
-        <div class="flex" style="margin : 0">
-          <p class="nav_icon">@</p>
-          <a class="settings">Settings</a>
-        </div>
-        <div class="flex" style="margin : 0">
-          <input class="set_check" type="checkbox">
-          <p class="set" style="margin : 0">enable/disable blur</p>
-        </div>
       </li>
 
     </ul>
 
   </nav>
 
-  <!-- ad -->
+<!-- ad -->
 
   <div class="ad_flex">
 
@@ -148,33 +120,13 @@
 
   </div>
 
-  <!-- cards -->
-
-  <a class="card_link" href="./zsh_sunrise.htm">
-
-    <div class="card">
-
-      <header>
-
-        <h1 class="card_head">zsh_sunrise</h1>
-
-        <time datetime="22-05-24">22/05/24</time>
-
-      </header>
-
-      <p>A zsh theme that will definitely enchance your experience</p>
-
-    </div>
-
-  </a>
-
-  <!-- footer -->
-
-  <footer>Made with<p class="icon">&</p>By tech8i</footer>
-
   <!-- js scripts -->
 
+  <script src="assets/js/eruda.js"></script>
+  <script>eruda.init()</script>
+  <script src="assets/js/ad.js"></script>
   <script src="assets/js/index.js"></script>
+  <script src="assets/js/nav_bar.js"></script>
 
 </body>
 
