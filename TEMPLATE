@@ -4,15 +4,12 @@
 
 <head>
 
-  <title>tech8i - About</title>
+  <title>tech8i - Home</title>
 
   <meta charset="utf-8">
   <meta name="theme-color" content="#fdf5e2"/>
   <meta name="viewport" content="initial-scale=1">
-
-  <link rel="stylesheet" href="assets/css/ad.css">
   <link rel="stylesheet" href="assets/css/index.css">
-  <link rel="stylesheet" href="assets/css/nav_bar.css">
 
 </head>
 
@@ -31,7 +28,17 @@
 
   </div>
 
-  <div class="overlay"></div>
+  <!-- alert overlay -->
+
+  <div class="overlay_1"></div>
+
+  <!-- nav bar menu overlay -->
+
+  <div class="overlay_2"></div>
+
+  <!-- nav bar overlay -->
+
+  <div class="overlay_3"></div>
 
   <!-- nav bar -->
 
@@ -39,15 +46,18 @@
 
   <nav>
 
-    <div class="logo">
+    <header class="logo">
+
       <img class="logo_img" src="assets/png/logo_lit.png" alt="Logo image">
+
       <h1 class="logo_txt">TECH8I</h1>
-    </div>
+
+    </header>
 
     <input class="toggle" type="checkbox">
 
     <button class="switch">
-      <img class="drk_lit" src="assets/svg/dark.svg" alt="Dark/Light switch">
+      <p class="icon" style="font-size : 3rem">%</p>
     </button>
 
     <button class="burger">
@@ -59,23 +69,44 @@
     <ul class="main_menu">
 
       <li>
-        <img src="assets/svg/home.svg" alt="Home link">
+        <p class="nav_icon">x</p>
         <a class="home" href="index.html">Home</a>
       </li>
       <li>
-        <img src="assets/svg/about.svg" alt="About link">
+        <p class="nav_icon">?</p>
         <a class="about" href="about.htm">About</a>
       </li>
-      <li>
-        <img src="assets/svg/contact.svg" alt="Contact link">
+      <li style="
+        margin : 0;
+        margin-left : 1.25rem;
+        padding-bottom : .5rem;">
+        <p class="nav_icon">;</p>
         <a class="contact" href="contact.htm">Contact</a>
+      </li>
+      <li style="
+        margin : 0;
+        display : block;
+        padding-top : .5rem;
+        margin-bottom : 1rem;
+        padding-left : 1.25rem;">
+        <div class="flex" style="margin : 0">
+          <p class="nav_icon">@</p>
+          <a class="settings">Settings</a>
+        </div>
+        <ul class="mnu">
+          <input id="check" class="set_check" type="checkbox">
+          <label for="check" class="box_cont">
+          <span class="box"></span>
+          </label>
+          <p class="set" style="margin : 0">enable/disable blur</p>
+        </ul>
       </li>
 
     </ul>
 
   </nav>
 
-<!-- ad -->
+  <!-- ad -->
 
   <div class="ad_flex">
 
@@ -120,13 +151,13 @@
 
   </div>
 
+  <!-- footer -->
+
+  <footer>Made with<p class="icon">&</p>By tech8i</footer>
+
   <!-- js scripts -->
 
-  <script src="assets/js/eruda.js"></script>
-  <script>eruda.init()</script>
-  <script src="assets/js/ad.js"></script>
   <script src="assets/js/index.js"></script>
-  <script src="assets/js/nav_bar.js"></script>
 
 </body>
 

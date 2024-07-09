@@ -4,13 +4,25 @@
 
     let tgl = document.querySelector(".toggle")
     let alrt = document.querySelector(".alert")
+    let svg_2 = document.querySelector(".mail")
     let swtx = document.querySelector(".switch")
     let img = document.querySelector(".logo_img")
+    let svg_3 = document.querySelector(".reddit")
+    let svg_4 = document.querySelector(".youtube")
+    let svg_5 = document.querySelector(".facebook")
+    let svg_1 = document.querySelectorAll(".copy_img")
     let nav_ovrly = document.querySelector(".overlay_2")
     let alrt_ovrly = document.querySelector(".overlay_1")
     let theme = document.querySelector('meta[name="theme-color"]')
 
   // func
+
+    window.onload = function () {
+      if (localStorage.getItem("hasCodeRunBefore") === null) {
+        localStorage.setItem("theme","lit")
+      localStorage.setItem("hasCodeRunBefore", true);
+      }
+    }
 
     tgl.addEventListener("click", () => {
       if (nav_ovrly.style.height === "100%") {
@@ -38,12 +50,26 @@
           alrt.style.display = "flex"
           alrt_ovrly.style.display = "block"
         }
+        svg_1.forEach((smt) => {
+          smt.src = "assets/svg/copy_drk.svg"
+        })
+        svg_2.src = "assets/svg/mail_drk.svg"
+        svg_3.src = "assets/svg/reddit_drk.svg"
+        svg_4.src = "assets/svg/youtube_drk.svg"
+        svg_5.src = "assets/svg/facebook_drk.svg"
       }
       else {
         img.src = "assets/png/logo_lit.png"
         localStorage.setItem("theme","lit")
         localStorage.setItem("alert","true")
         theme.setAttribute('content','#fdf5e2')
+        svg_1.forEach((smt) => {
+          smt.src = "assets/svg/copy.svg"
+        })
+        svg_2.src = "assets/svg/mail.svg"
+        svg_3.src = "assets/svg/reddit.svg"
+        svg_4.src = "assets/svg/youtube.svg"
+        svg_5.src = "assets/svg/facebook.svg"
       }
     })
 
@@ -53,6 +79,13 @@
       img.src = "assets/png/logo_drk.png"
       document.body.classList.toggle("drk")
       theme.setAttribute('content',  '#123')
+      svg_1.forEach((smt) => {
+        smt.src = "assets/svg/copy_drk.svg"
+      })
+      svg_2.src = "assets/svg/mail_drk.svg"
+      svg_3.src = "assets/svg/reddit_drk.svg"
+      svg_4.src = "assets/svg/youtube_drk.svg"
+      svg_5.src = "assets/svg/facebook_drk.svg"
     }
 
 
@@ -123,20 +156,22 @@
 
   // var
 
-    let set = document.querySelector(".set")
-    let settings = document.querySelector(".settings")
+    let mnu = document.querySelector(".mnu")
+    let box = document.querySelector(".box")
+    let set = document.querySelector(".settings")
     let set_chk = document.querySelector(".set_check")
     let top_nav_ovrly = document.querySelector(".overlay_3")
     let set_flex = document.querySelector(".flex:nth-child(2)")
 
   // func
 
-    settings.addEventListener("click", () => {
-      set.classList.toggle("enlarge_1")
-      set_chk.classList.toggle("enlarge_2")
-      set_flex.classList.toggle("enlarge_3")
+    set
+
+    .addEventListener("click", () => {
+      mnu.classList.toggle("enlarge")
     })
     set_chk.addEventListener("click", () => {
+      box.classList.toggle("make_anim")
       if (set_chk.checked === true) {
         localStorage.setItem("blur","false")
         nav_ovrly.style.backdropFilter = "blur(.5rem)"

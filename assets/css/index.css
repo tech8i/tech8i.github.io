@@ -264,19 +264,14 @@ a:hover:after {
 }
 
 .set_check {
-  height: 0;
-  width: 1.5rem;
-  margin-right: 0.5rem;
-  margin-left: 2.25rem;
-  transition: height 0.1s;
-  box-shadow: 0.2rem 0 0 #543, -0.2rem 0 0 #543, 0 0.2rem 0 #543, 0 -0.2rem 0 #543;
+  display: none;
 }
 
 .set {
   color: #000;
-  max-height: 0;
   overflow: hidden;
   font-size: 1.5rem;
+  padding-left: 1rem;
   transition: height 0.1s;
 }
 
@@ -380,6 +375,7 @@ footer {
   margin: 0 1.5rem;
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 2rem;
   box-shadow: 0.5rem 0 0 #543, -0.5rem 0 0 #543, 0 0.5rem 0 #543, 0 -0.5rem 0 #543;
 }
 
@@ -398,8 +394,8 @@ footer {
 .drk .ad,
 .drk .card,
 .drk .cont,
-.drk footer,
 .drk .cross,
+.drk footer,
 .drk .content,
 .drk .card_head,
 .drk .main_menu {
@@ -425,7 +421,9 @@ footer {
 
 .drk .ad,
 .drk .card,
-.drk footer {
+.drk .cont,
+.drk .cross,
+.drk .content {
   background: #345;
 }
 
@@ -454,6 +452,15 @@ footer {
 
 .drk .set_check {
   box-shadow: 0.2rem 0 0 #456, -0.2rem 0 0 #456, 0 0.2rem 0 #456, 0 -0.2rem 0 #456;
+}
+
+.drk .box_cont {
+  background: #345;
+  box-shadow: 0.2rem 0 0 #456, -0.2rem 0 0 #456, 0 0.2rem 0 #456, 0 -0.2rem 0 #456;
+}
+
+.drk .box {
+  background: #234;
 }
 
 .fix {
@@ -501,18 +508,6 @@ p {
   backdrop-filter: none;
 }
 
-.enlarge_1 {
-  max-height: 100vh;
-}
-
-.enlarge_2 {
-  height: 1.5rem;
-}
-
-.enlarge_3 {
-  padding-top: 1rem;
-}
-
 .toggle:checked ~ .burger .line_1,
 .toggle:checked ~ .burger .line_2,
 .toggle:checked ~ .burger .line_3 {
@@ -533,6 +528,44 @@ p {
 .drk .toggle:checked ~ .burger .line_2:after,
 .drk .toggle:checked ~ .burger .line_2:before {
   box-shadow: 0.2rem 0 0 #456, -0.2rem 0 0 #456, 0 0.2rem 0 #456, 0 -0.2rem 0 #456;
+}
+
+.box_cont {
+  width: 2rem;
+  height: 1rem;
+  display: block;
+  background: #fb9;
+  margin-left: 2rem;
+  position: relative;
+  box-shadow: 0.2rem 0 0 #543, -0.2rem 0 0 #543, 0 0.2rem 0 #543, 0 -0.2rem 0 #543;
+}
+
+.box {
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  transition: 0.1s;
+  background: #765;
+  position: absolute;
+}
+
+.make_anim {
+  left: 1rem;
+}
+
+.mnu {
+  display: flex;
+  max-height: 0;
+  transition: 0.5s;
+  overflow-y: hidden;
+  align-items: center;
+}
+
+.enlarge {
+  max-height: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -94,10 +94,13 @@
           <p class="nav_icon">@</p>
           <a class="settings">Settings</a>
         </div>
-        <div class="flex" style="margin : 0">
-          <input class="set_check" type="checkbox">
+        <ul class="mnu">
+          <input id="check" class="set_check" type="checkbox">
+          <label for="check" class="box_cont">
+          <span class="box"></span>
+          </label>
           <p class="set" style="margin : 0">enable/disable blur</p>
-        </div>
+        </ul>
       </li>
 
     </ul>
@@ -203,7 +206,7 @@
       <code>precmd</code>
       somewhere like
       <code>~/zsh/</code>
-      and start sourcing them in your .zshrc profile located in
+      and start sourcing them in your .zshrc file located in
       <code>$PREFIX/etc</code>
       like this:
     </p>
@@ -296,7 +299,7 @@ color5 : #ff99bb
 
     <p>
       And one more thing, if you want to use the ascii art
-      I created for this theme on other projects,
+      I created for this theme in other projects,
       you'll need to mention "tech8i"
       in your future creation
     </p>
@@ -310,6 +313,10 @@ color5 : #ff99bb
 
   <h2>Comments</h2>
 
+  <div class="content">
+    <p class="cmnt" style="text-align : center">Load comments</p>
+  </div>
+
   <!-- cusdis -->
 
   <div id="cusdis_thread"
@@ -319,7 +326,6 @@ color5 : #ff99bb
     data-page-title="{{ PAGE_TITLE }}"
     data-app-id="fe528014-3371-4229-9cd0-55bdf8567b64"></div>
 
-
   <!-- footer -->
 
   <footer>Made with<p class="icon">&</p>By tech8i</footer>
@@ -328,7 +334,6 @@ color5 : #ff99bb
 
   <script src="assets/js/index.js"></script>
   <script src="assets/js/cusdis.js"></script>
-
 
 </body>
 

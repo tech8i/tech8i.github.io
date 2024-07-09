@@ -8,7 +8,7 @@
 /* class */
 
 .px-1 {
-  color : #765;
+  color : #999;
   display : flex;
   font-size : 1.3rem;
   margin : 1rem .5rem;
@@ -20,9 +20,9 @@
 .border {
   width : 50%;
   height : 1rem;
-  background : #fb9;
+  background : #345;
   margin-bottom : 1rem;
-  box-shadow : .5rem 0 0 #543 , -.5rem 0 0 #543 , 0 .5rem 0 #543 , 0 -.5rem 0 #543;
+  box-shadow : .5rem 0 0 #456 , -.5rem 0 0 #456 , 0 .5rem 0 #456 , 0 -.5rem 0 #456;
 }
 
 .mt-4 {
@@ -38,16 +38,16 @@
 
 .my-4{
   margin-bottom : 2rem;
-  box-shadow : .5rem 0 0 #543 , -.5rem 0 0 #543 , 0 .5rem 0 #543 , 0 -.5rem 0 #543;
+  box-shadow : .5rem 0 0 #456 , -.5rem 0 0 #456 , 0 .5rem 0 #456 , 0 -.5rem 0 #456;
 }
 
 /* select */
 
 #root button {
-  color : #765;
-  background : #fb9;
+  color : #999;
+  background : #345;
   font-family : lcdblock;
-  box-shadow : .3rem 0 0 #543 , -.3rem 0 0 #543 , 0 .3rem 0 #543 , 0 -.3rem 0 #543;
+  box-shadow : .3rem 0 0 #456 , -.3rem 0 0 #456 , 0 .3rem 0 #456 , 0 -.3rem 0 #456;
 }
 
 #root a {
