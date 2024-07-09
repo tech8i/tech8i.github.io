@@ -50,9 +50,9 @@
           alrt.style.display = "flex"
           alrt_ovrly.style.display = "block"
         }
-        svg_1.forEach((smt) => {
+        svg_1.forEach((smt => {
           smt.src = "assets/svg/copy_drk.svg"
-        })
+        }))
         svg_2.src = "assets/svg/mail_drk.svg"
         svg_3.src = "assets/svg/reddit_drk.svg"
         svg_4.src = "assets/svg/youtube_drk.svg"
@@ -63,9 +63,9 @@
         localStorage.setItem("theme","lit")
         localStorage.setItem("alert","true")
         theme.setAttribute('content','#fdf5e2')
-        svg_1.forEach((smt) => {
+        svg_1.forEach((smt => {
           smt.src = "assets/svg/copy.svg"
-        })
+        }))
         svg_2.src = "assets/svg/mail.svg"
         svg_3.src = "assets/svg/reddit.svg"
         svg_4.src = "assets/svg/youtube.svg"
@@ -79,9 +79,9 @@
       img.src = "assets/png/logo_drk.png"
       document.body.classList.toggle("drk")
       theme.setAttribute('content',  '#123')
-      svg_1.forEach((smt) => {
+      svg_1.forEach((smt => {
         smt.src = "assets/svg/copy_drk.svg"
-      })
+      }))
       svg_2.src = "assets/svg/mail_drk.svg"
       svg_3.src = "assets/svg/reddit_drk.svg"
       svg_4.src = "assets/svg/youtube_drk.svg"
